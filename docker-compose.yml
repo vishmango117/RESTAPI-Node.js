@@ -1,0 +1,9 @@
+version: "3"
+# each service describe the different container we need
+services:
+    restapi:
+        # which files to use for build
+        build: .
+        # EXTERNAL_PORT: INTERNAL_PORT
+        ports:
+            - "8080:3000"
